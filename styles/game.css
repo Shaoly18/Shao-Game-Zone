@@ -4,12 +4,20 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+
 .para {
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
+width: 342px;
+text-align: left;
 }
-
+.para-two{
+    color: #534C64;
+font-size: 18px;
+font-weight: 400;
+margin-top: 10px;
+}
 .btn-pri {
     color: #FFF;
     font-size: 20px;
@@ -17,7 +25,7 @@ body {
     display: inline-flex;
     padding: 21px 40px;
     border-radius: 48px;
-    background:#FF42A5;
+    background: #FF42A5;
     align-items: flex-start center;
     gap: 10px;
     border: none;
@@ -26,23 +34,22 @@ body {
 
 /* nav styles */
 nav {
-padding: 0px 240px;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
+    gap: 400px;
+    justify-content: center;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px #0000000d;
 }
 
 nav>ul {
     display: flex;
+    gap: 50px;
     align-items: center;
 }
 
 nav li {
-    list-style: none;
-    margin-right: 50px;
+    list-style: none; 
 }
 
 .nav-gamer {
@@ -60,6 +67,8 @@ nav li {
     color: #0B0223;
     font-size: 45px;
     font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 120px;
 }
 
 .pink {
@@ -99,10 +108,70 @@ nav li {
     margin-bottom: 24px;
     margin-top: 0px;
 }
-.banner{
+
+.banner {
     display: flex;
-    justify-content: space-around;
+    gap: 200px;
+    justify-content: center;
+    margin-top: 10px;
 }
-#go-btn{
+
+.banner-text {
+    text-align: left;
+    padding: 100px 200px 100px 130px;
+    background: #fff;
+}
+#go-btn {
     background: #4EC5F7;
+}
+/* main */
+.section-one{
+    text-align: center;
+    background: #FFF;
+}
+#card{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 48px;
+}
+.img-two{
+    width: 342px;
+height: 400px;
+}
+.section-two{
+    justify-content: center;
+    padding: 200px 45px 100px 240px;
+    display: flex;
+    gap: 265px;
+   background-color: #FFF;
+}
+    
+#sec-two-text{
+    
+}
+
+
+/* Responsive */
+@media screen and (max-width:576px) {
+    body{
+        margin: auto;
+    }
+    nav{
+        box-shadow: none;
+    }
+    nav,
+    nav>ul {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        gap: 30px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    #img{
+        width: 1000px;
+    }
 }
