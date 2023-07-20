@@ -9,7 +9,6 @@ body {
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
-    width: 342px;
     text-align: left;
 }
 
@@ -17,7 +16,6 @@ body {
     color: #534C64;
     font-size: 18px;
     font-weight: 400;
-    margin-top: 10px;
 }
 
 .btn-pri {
@@ -130,6 +128,7 @@ nav li {
 .section-one {
     text-align: center;
     background: #FFF;
+    margin-top: 120px;
 }
 
 #card {
@@ -137,6 +136,9 @@ nav li {
     gap: 24px;
     justify-content: center;
     margin-top: 48px;
+}
+#hover:hover{
+    
 }
 
 .img-two {
@@ -146,18 +148,48 @@ nav li {
 
 .section-two {
     justify-content: center;
-    padding: 200px 45px 100px 240px;
+    padding: 200px 45px 10px 240px;
     display: flex;
-    gap: 265px;
+    gap: 150px;
     background-color: #FFF;
+   
+}
+#max{
+    margin-left: 150px;
+}
+#mini{
+    position: relative;
+    bottom: 300px;
+    
 }
 
-#sec-three {
-    display: flex
+#sec-three{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+ 
+.five{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 50px;
 
 }
-
-
+.four{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.sec-three-img{
+    display: flex;
+    gap: 16px;
+}
+.sec-three-img:hover{
+    border: 5px solid #f55d76;
+    padding: 10px;
+    border-radius: 50px;
+background: #FFF;
+}
 #footer {
     padding: 50px 0px 100px;
     background: #0B0223;
@@ -197,28 +229,42 @@ justify-content: center;
 
 /* Responsive */
 @media screen and (max-width:576px) {
-    body {
-        margin: auto;
+    header,main{
+      margin-left:130px;
     }
-
     nav {
+        flex-direction: column;
         box-shadow: none;
+        gap: 0px;
+        margin-left: 100px;
     }
 
-    nav,
-    nav>ul {
+    nav>ul,#card,.section-two {
         flex-direction: column;
     }
 
-    nav>ul {
+    nav>ul{
         gap: 30px;
     }
 
     .banner {
         flex-direction: column-reverse;
+        gap: 0px;
     }
-
-    #img {
-        width: 1000px;
+    .banner-text{
+        padding: 0px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: 10px;
     }
+   #card{
+    gap: 100px;
+   }
+   .section-two {
+    padding: 0px;
+    margin-top: 150px;
+   }
+   #max{
+    margin-left: 0px;
+   }
 }
